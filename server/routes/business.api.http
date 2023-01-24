@@ -1,0 +1,54 @@
+###
+
+GET http://localhost:3500/api/business HTTP/1.1
+
+###
+
+GET http://localhost:3500/api/business/1 HTTP/1.1
+
+###
+
+POST http://localhost:3500/api/business HTTP/1.1
+content-type: application/json
+
+{
+    "nit": "1111a11121",
+    "nombre": "admin1234461",
+    "direccion": "admin1234561",
+    "telefono": "1234562"
+}
+
+###
+
+PUT http://localhost:3500/api/business/1 HTTP/1.1
+content-type: application/json
+
+{
+    "nit": "22222222",
+    "nombre": "22222222",
+    "direccion": "22222222",
+    "telefono": "22222222"
+}
+
+###
+
+DELETE http://localhost:3500/api/business/3 HTTP/1.1
+
+###
+
+GET http://localhost:3500/api/business/bap HTTP/1.1
+
+###
+
+GET http://localhost:3500/api/business/bap2pdf HTTP/1.1
+
+###
+
+POST http://localhost:3500/api/business/bap2mail HTTP/1.1
+content-type: application/json
+
+{
+    "email": "alvarezjuan@hotmail.com"
+}
+
+###

@@ -1,0 +1,37 @@
+###
+
+GET http://localhost:3500/api/products HTTP/1.1
+
+
+###
+
+GET http://localhost:3500/api/products/forbusiness/1 HTTP/1.1
+
+###
+
+GET http://localhost:3500/api/products/1 HTTP/1.1
+
+###
+
+POST http://localhost:3500/api/products/forbusiness/7 HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "admin12345612"
+}
+
+###
+
+PUT http://localhost:3500/api/products/7 HTTP/1.1
+content-type: application/json
+
+{
+    "business_id": "1",
+    "nombre": "admin123456"
+}
+
+###
+
+DELETE http://localhost:3500/api/products/7 HTTP/1.1
+
+###

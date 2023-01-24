@@ -1,0 +1,35 @@
+###
+
+GET http://localhost:3500/api/users HTTP/1.1
+
+###
+
+POST http://localhost:3500/api/users/auth HTTP/1.1
+content-type: application/json
+
+{
+    "email": "admin@acme.org",
+    "pwd": "admin123456"
+}
+
+###
+
+POST http://localhost:3500/api/users/auth HTTP/1.1
+content-type: application/json
+
+{
+    "email": "admin",
+    "pwd": ""
+}
+
+###
+
+POST http://localhost:3500/api/users/auth HTTP/1.1
+content-type: application/json
+
+{
+    "email": "admin@acme.org",
+    "pwd": "admin"
+}
+
+###
